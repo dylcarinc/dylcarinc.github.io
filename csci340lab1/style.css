@@ -9,6 +9,7 @@ header .row{
 }
 
 header h1 {
+  font-family: "Open Sans";  
   font-weight: 700;
   margin: 0;
 }
@@ -25,6 +26,7 @@ header nav {
 }
 
 .jumbotron h2 {
+font-family: "Open Sans";  
   font-size: 60px;
   font-weight: 700;
   margin: 0;
@@ -32,6 +34,7 @@ header nav {
 }
 
 .jumbotron h3 {
+  font-family: "Open Sans";    
   margin: 0 0 20px;
   color: #fff;
 }
@@ -41,6 +44,7 @@ header p {
   margin: 0;
 }
 ul {
+    color: #fff;
     list-style-position: inside;
 }
 section .row img {
