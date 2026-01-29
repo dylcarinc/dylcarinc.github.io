@@ -22,3 +22,6 @@ header p {
   padding: 0 20px;
   margin: 0;
 }
+ul {
+    list-style-position: inside;
+}
