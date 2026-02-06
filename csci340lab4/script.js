@@ -14,7 +14,7 @@
                 method: 'GET',
                 url: "https://en.wikipedia.org/api/rest_v1/page/summary/" + artist,
                 success: function(results) {
-                    $('#success #Lyrics').text(results.extract);
+                    $('#success #Wikipedia').text(results.extract);
                     $('#success #Link').html(`<a href="${results.content_urls.desktop.page}">Read more on Wikipedia</a>`);
                 },
                 error: function(xhr,status,error) {
