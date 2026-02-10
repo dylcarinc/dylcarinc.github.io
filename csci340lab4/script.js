@@ -16,6 +16,7 @@
                 success: function(results) {
                     $('#success #Wikipedia').text(results.extract);
                     $('#success #Link').html(`<a href="${results.content_urls.desktop.page}">Read more on Wikipedia</a>`);
+                    $('#success #Picture').html('<img src="' + results.originalimage.source + '" />');
                 },
                 error: function(xhr,status,error) {
                     console.log(error);
