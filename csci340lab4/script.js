@@ -39,7 +39,7 @@ function displayTrack(index) {
       $('#success #Wikipedia').text(results.extract);
       $('#success #Link').html(`<a href="${results.content_urls.desktop.page}" target="_blank">Read more on Wikipedia</a>`);
       if (results.originalimage) {
-        $('#success #Picture').html('<img src="' + results.originalimage.source + '" />');
+        $('#success #Picture').html('<img src="' + results.thumbnail.source + '" />');
       }
     },
     error: function(xhr, status, error) {

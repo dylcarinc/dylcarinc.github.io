@@ -2,9 +2,23 @@
 <html>
 <head>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-  <body>
-    <div id="success">
+<body>
+  <header>
+    <div class="container">
+      <h1 class="text-center">What I've been listening to</h1>
+    </div>
+  </header>
+  <div class="container">
+    <div class="row" id="success">
+      <div class="col-md-4">
+        <h2>About This Site</h2>
+        <p>This website calls the last.fm API to get the 50 most recent tracks that I have listened to on <a href ="https://www.last.fm/user/thewwdc">my lastfm account.</a> It then calls the wikipedia API to get information about the artist of the song.</p>
+        <p>There are still some issues with the Wikipedia API, as it will return a page about the bird, rather than the band the Eagles. I hope to add the ability to put in other usernames too.</p>
         <div class="track-counter">
           <span id="currentTrack">1</span> / <span id="totalTracks">50</span>
         </div>
@@ -12,17 +26,28 @@
           <button id="prevBtn" class="btn btn-primary">← Previous</button>
           <button id="nextBtn" class="btn btn-primary">Next →</button>
         </div>
+      </div>
+      <div class="col-md-4">
+        <h2>Last.fm Track</h2>
         <div id="Track"></div>
-        <div id="Album"></div>
         <div id="Artist"></div>
+        <div id="Album"></div>
         <div id="Cover"></div>
+      </div>
+      <div class="col-md-4">
+        <h2>Artist Info</h2>
+        <div id="Picture"></div>
         <div id="Wikipedia"></div>
         <div id="Link"></div>
-        <div id="Picture"></div>
+      </div>
+      
     </div>
-    <div id="error"></div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-    <script src="script.js"></script>
-  </body>
+  </div>
+  
+  <div id="error"></div>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</body>
 </html>
